@@ -14,6 +14,7 @@ import Brand from "@/components/sections/home1/Brand"
 import Testimonial from "@/components/sections/home1/Testimonial"
 import Future from "@/components/Future"
 import Contact from "@/components/Contact"
+import ChooseEmaar from "@/components/ChooseEmaar"
 export default function Home() {
 
     return (
@@ -25,6 +26,7 @@ export default function Home() {
                 <Future/>
                 <Services />
                 <Projects />
+                <ChooseEmaar/>
                 <Team />
                 <Contact/>
                 {/* <Faq />

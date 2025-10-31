@@ -332,6 +332,10 @@ h6 {
     margin-left: 10px;
 }
 
+.extra_spacing {
+    margin-bottom: 50px;
+}
+
 .main_wrapper {
     display: flex;
     align-items: center;
