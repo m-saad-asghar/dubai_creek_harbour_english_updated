@@ -29,7 +29,7 @@ export default function ChooseEmaar() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">116,500+</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>116,500+</h2>
                                     <p>Units delivered as of July 2024.</p>
                                     
                                 </div>
@@ -51,7 +51,7 @@ export default function ChooseEmaar() {
                                     {/* <span className="icon-construction-machine"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">30,000+</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>30,000+</h2>
                                     <p>Homes currently under development in the UAE.</p>
                                     
                                 </div>
@@ -73,7 +73,7 @@ export default function ChooseEmaar() {
                                     {/* <span className="icon-check-list"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">56%</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>56%</h2>
                                    <p>Growth in property sales in H1 2024.</p>
                                     
                                 </div>
@@ -95,7 +95,7 @@ export default function ChooseEmaar() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">12+</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>12+</h2>
                                     <p>Countries — a truly global presence.</p>
                                     
                                 </div>

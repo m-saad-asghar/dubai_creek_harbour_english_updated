@@ -29,7 +29,7 @@ export default function Pricing() {
                                     </span>
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">High Rental Profits</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>High Rental Profits</h2>
                                     <p>Yields of 5–9% annually.</p>
                                     
                                 </div>
@@ -51,7 +51,7 @@ export default function Pricing() {
                                     {/* <span className="icon-construction-machine"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Premium Property, Lower Cost</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Premium Property, Lower Cost</h2>
                                     <p>Luxury at competitive rates.</p>
                                     
                                 </div>
@@ -73,7 +73,7 @@ export default function Pricing() {
                                     {/* <span className="icon-check-list"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Tax-Free Ownership</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Tax-Free Ownership</h2>
                                     <p>No property taxes ever.</p>
                                     
                                 </div>
@@ -95,7 +95,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Global Accessibility</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Global Accessibility</h2>
                                     <p>Direct flights to major cities.</p>
                                     
                                 </div>
@@ -117,7 +117,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Tourism & Lifestyle</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Tourism & Lifestyle</h2>
                                     <p>Beaches, malls, attractions & hotels.</p>
                                     
                                 </div>
@@ -139,7 +139,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Safe & Family-Friendly</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Safe & Family-Friendly</h2>
                                     <p>One of the safest cities worldwide.</p>
                                     
                                 </div>
@@ -161,7 +161,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Business & Trade Hub</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Business & Trade Hub</h2>
                                     <p>Attractive to global investors.</p>
                                     
                                 </div>
@@ -183,7 +183,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">UAE Golden Visa</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>UAE Golden Visa</h2>
                                     <p>Golden & Green Visas for investors.</p>
                                     
                                 </div>
@@ -205,7 +205,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Future-Ready City</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Future-Ready City</h2>
                                     <p>Focus on tech, green energy, health & education.</p>
                                     
                                 </div>
@@ -227,7 +227,7 @@ export default function Pricing() {
                                     {/* <span className="icon-interior-design"></span> */}
                                 </div>
                                 <div className="content-box">
-                                    <h2><Link href="#">Exclusive Emaar Rewards</Link></h2>
+                                    <h2 style={{color: "#ffffff"}}>Exclusive Emaar Rewards</h2>
                                     <p>Platinum & Gold perks for high-value investors.</p>
                                     
                                 </div>
