@@ -12,7 +12,7 @@ export default function Pricing() {
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="container">
-                <div className="sec-title text-center">
+                <div className="sec-title">
                     <h2>Why Invest In Dubai?</h2>
                 </div>
                 <div className="row">

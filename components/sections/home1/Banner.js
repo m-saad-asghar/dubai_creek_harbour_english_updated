@@ -40,17 +40,17 @@ export default function Banner() {
                     <div className="main-slider-one__content">
                         <div className='banner_text_container'>
          <div>
-             <p className='small_heading'>DUBAI CREEK HARBOUR</p>
-          <h3>
-  Luxury Homes Starting from <span className="line-break">AED 1.7M.*</span>
+             <p className='small_heading' style={{lineHeight: "1.2"}}>DUBAI CREEK HARBOUR</p>
+          <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
+  Luxury Homes Starting from <span className="line-break">AED 1.79M.*</span>
 </h3>
          </div>
 
-        <p className="down_styling">EARN EXCEPTIONAL RETURNS ON YOUR PROPERTY INVESTMENT
+        <p className="down_styling" style={{lineHeight: "1.5"}}>EARN EXCEPTIONAL RETURNS ON YOUR PROPERTY INVESTMENT
 IN DUBAI’S MOST SOUGH-AFTER LOCATIONS.</p>
   <div className='resp_usd'>
-        <p className="down_styling">
-  *USD 463,000 / EUR 398,000 / <span className="line-break">GBP 344,000</span>
+        <p className="down_styling" style={{lineHeight: "1.5"}}>
+  *USD 488,000 / EUR 420,000 / <span className="line-break-other">GBP 399,000</span>
 </p>
 
       </div>

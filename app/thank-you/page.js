@@ -33,11 +33,11 @@ export default function ThankYou() {
     };
   }, [router]);
 
-  useEffect(() => {
-    if (window.fbq) {
-      window.fbq("track", "Lead");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.fbq) {
+  //     window.fbq("track", "Lead");
+  //   }
+  // }, []);
 
   return (
     <>
@@ -95,7 +95,7 @@ export default function ThankYou() {
       </div>
     </div>
      {/* ✅ Google Analytics Event Script */}
-      <Script id="lead-submission-dch-en" strategy="afterInteractive">
+      {/* <Script id="lead-submission-dch-en" strategy="afterInteractive">
       {`
         window.gtag('event', 'lead_submission_dch_en', {
           lead_language: 'english',
@@ -105,7 +105,7 @@ export default function ThankYou() {
           value: 150
         });
       `}
-    </Script>
+    </Script> */}
       </>
   );
 }

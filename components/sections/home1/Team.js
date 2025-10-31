@@ -12,8 +12,8 @@ export default function Team() {
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="">
-                <div className="sec-title text-center">
-                    <h2>Why Choose Emaar?</h2>
+                <div className="sec-title container">
+                    <h2>Dubai Map</h2>
                 </div>
                 <div className="text-box project_content">
                                  <img src="assets/img/dubai_creek_harbour_map.jpg" alt="" className="map_styling"/>

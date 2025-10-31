@@ -12,7 +12,7 @@ export default function Projects() {
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="container">
-                <div className="sec-title text-center">
+                <div className="sec-title">
                     <h2>Why Choose Emaar?</h2>
                 </div>
                 <div className="text-box project_content">

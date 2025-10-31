@@ -25,9 +25,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
             <div className="mobile-menu">
                 <nav className="menu-box">
                     <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times"></i></div>
-                    <div className="nav-logo">
+                    {/* <div className="nav-logo">
                         <Link href="/"><img src="assets/img/resource/logo-2.png" alt="Logo"/></Link>
-                    </div>
+                    </div> */}
                     <div className="menu-outer">
                         <ul className="navigation clearfix">
                             <li className="active menu-item-has-children"> <Link href="#" onClick={handleMobileMenu}>Home</Link>

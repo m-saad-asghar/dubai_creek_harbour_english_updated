@@ -205,6 +205,23 @@ h2 {
     font-size: 2rem;
 }
 
+.logo_align {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.emaar_logo {
+    height: 60px !important;
+    width: auto !important;
+}
+
+.shiro_logo {
+        height: 40px;
+        width: auto;
+    }
+
+
 h3 {
     font-size: 1.75rem;
 }
@@ -223,6 +240,15 @@ h6 {
 
 .about_image {
     height: 100% !important;
+}
+
+.line-break {
+  display: block; /* default inline */
+  white-space: nowrap;
+}
+
+.line-break-other {
+  display: inline; /* default inline */
 }
 
 
@@ -279,6 +305,10 @@ h6 {
     padding-bottom: 20px;
 }
 
+.main_heading_margin {
+    margin-bottom: 20px !important;
+}
+
 .dropdown_styling {
     display: flex;
     flex-direction: column;
@@ -290,10 +320,6 @@ h6 {
 
 .future_container {
     margin-bottom: 80px;
-}
-
-.line-break {
-  display: inline; /* default inline */
 }
 
 .down_styling {
@@ -689,7 +715,7 @@ label {
     position: static;
     max-width: 1320px;
     width: 100%;
-    padding: 0px 60px;
+    /* padding: 0px 60px; */
     margin: 0 auto;
 }
 
@@ -6492,7 +6518,25 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .map_styling {
+    height: auto;
+}
+
+    .shiro_logo {
+        height: 32px;
+        width: auto;
+    }
+
+    .emaar_logo {
+    height: 50px !important;
+    width: auto !important;
+}
+
      .line-break {
+    display: block;
+  }
+
+    .line-break-other {
     display: block;
   }
 

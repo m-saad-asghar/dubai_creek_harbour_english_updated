@@ -163,8 +163,8 @@ export default function Contact() {
 }
 
 router.push('/thank-you');
-return;
-// await sendLeadEmail();
+// return;
+await sendLeadEmail();
 
 //   try {
 //     setDisableBtn(true);
