@@ -253,7 +253,7 @@ h6 {
 
 
 .contact-two {
-    background-color: #9f8151;
+    /* background-color: #9f8151; */
 }
 
 .full_height {
@@ -261,7 +261,7 @@ h6 {
 }
 
 .contact-page {
-     background-color: #9f8151;
+     /* background-color: #9f8151; */
      padding-top: 100px;
 }
 
@@ -468,7 +468,7 @@ h6 {
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 10px;
-    background-color: #9f8151;
+    background-color: #0b4a35;
     color: var(--thm-white);
     font-size: 14px;
     line-height: 40px;
