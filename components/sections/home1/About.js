@@ -9,10 +9,10 @@ export default function About() {
                 <div className="container">
                     <div className="row">
                         {/*Start About One Img */}
-                        <div className="col-xl-5 wow animated fadeInRight" data-wow-delay="0.1s">
-                            <div className="about-one__img">
-                                <div className="inner">
-                                    <img src="assets/img/gallery/about_img.jpg" alt=""/>
+                        <div className="col-xl-5 wow animated fadeInRight full_height" data-wow-delay="0.1s">
+                            <div className="about-one__img" style={{height: 500}}>
+                                <div className="inner full_height">
+                                    <img src="assets/img/gallery/about_img.jpg" alt="Welcome to Dubai Creek Harbour" className="full_height"/>
                                 </div>
                                 {/* <div className="experience-box">
                                     <div className="counter-box">
@@ -68,8 +68,10 @@ export default function About() {
                                         </div>
                                     </div>
                                 </div> */}
+                            </div>
+                        </div>
 
-                                <div className="about-one__content-bottom">
+                         <div className="about-one__content-bottom centerize" style={{display: "flex", justifyContent: "center"}}>
                                     <div className="about-one__content-bottom-author-box">
                                        <div className="btn-box">
                             <div className="btn-one">
@@ -93,8 +95,6 @@ export default function About() {
                                                 456789</Link></h4>
                                     </div> */}
                                 </div>
-                            </div>
-                        </div>
                         {/*End About One Content */}
                     </div>
                 </div>

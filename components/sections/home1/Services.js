@@ -13,7 +13,7 @@ export default function Pricing() {
             </div> */}
             <div className="container">
                 <div className="sec-title text-center">
-                    <h2>Why Invest In Dubai</h2>
+                    <h2>Why Invest In Dubai?</h2>
                 </div>
                 <div className="row">
                     {/*Start Service One Single */}

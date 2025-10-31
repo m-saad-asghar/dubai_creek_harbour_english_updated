@@ -145,8 +145,7 @@ export default function Contact() {
     },
   };
 
-   console.log("debugging payload", payload)
- return
+  
 
   async function sendLeadEmail() {
   try {
@@ -163,59 +162,56 @@ export default function Contact() {
   }
 }
 
-  try {
-    setDisableBtn(true);
-    const response = await fetch(
-      "https://crm.shiroestate.ae/rest/25/btnspp9oeepo8jt6/crm.lead.add.json",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      }
-    );
+router.push('/thank-you');
+await sendLeadEmail();
 
-    const result = await response.json();
-   setDisableBtn(false);
+//   try {
+//     setDisableBtn(true);
+//     const response = await fetch(
+//       "https://crm.shiroestate.ae/rest/25/btnspp9oeepo8jt6/crm.lead.add.json",
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(payload),
+//       }
+//     );
 
-    if (result.result) {
-      router.push('/thank-you');
-//       toast.success(
-//   "Thank you for reaching out. Your inquiry has been received and we will contact you soon.",
+//     const result = await response.json();
+//    setDisableBtn(false);
+
+//     if (result.result) {
+//       router.push('/thank-you');
+//       setFormData({
+//           name: '',
+//         phone: '',
+//         email: '',
+//         country_of_residence: '',
+//         bedrooms: '',
+//         duration: '',
+//         purpose: '',
+//       });
+//       await sendLeadEmail();
+//     } else {
+//       setDisableBtn(false);
+//       toast.error(
+//   "Something Went Wrong. Please Try Again.",
 //   {
-//     duration: 5000, 
+//     duration: 5000,
 //   }
 // );
-      setFormData({
-          name: '',
-        phone: '',
-        email: '',
-        country_of_residence: '',
-        bedrooms: '',
-        duration: '',
-        purpose: '',
-      });
-      await sendLeadEmail();
-    } else {
-      setDisableBtn(false);
-      toast.error(
-  "Something Went Wrong. Please Try Again.",
-  {
-    duration: 5000,
-  }
-);
-    }
-  } catch (error) {
-    setDisableBtn(false);
-    console.error("Error submitting lead:", error);
-       toast.error(
-  "Something Went Wrong. Please Try Again.",
-  {
-    duration: 5000,
-  }
-);
-  }
+//     }
+//   } catch (error) {
+//     setDisableBtn(false);
+//     console.error("Error submitting lead:", error);
+//        toast.error(
+//   "Something Went Wrong. Please Try Again.",
+//   {
+//     duration: 5000,
+//   }
+// );
+//   }
 };
 
 

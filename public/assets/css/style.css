@@ -221,8 +221,22 @@ h6 {
     font-size: 1rem;
 }
 
-.project_content {
-margin-bottom: 40px;
+.about_image {
+    height: 100% !important;
+}
+
+
+.contact-two {
+    background-color: #9f8151;
+}
+
+.full_height {
+    height: 100% !important;
+}
+
+.contact-page {
+     background-color: #9f8151;
+     padding-top: 100px;
 }
 
 .map_styling {
@@ -307,6 +321,11 @@ margin-bottom: 40px;
     outline: none;
     transition: all 200ms linear;
     transition-delay: 0.1s;
+}
+
+.aligment_of_qr_code {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .swiper-nav-style1 .swiper-button-next {
@@ -666,7 +685,7 @@ label {
     position: static;
     max-width: 1320px;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 60px;
     margin: 0 auto;
 }
 
@@ -6521,6 +6540,7 @@ Project Four Css
     
     .contact-page {
         padding-bottom: 70px;
+        padding-top: 60px;
     }
 
     .why-one {
@@ -7757,6 +7777,12 @@ Project Four Css
 
 
 @media only screen and (max-width: 767px) {
+
+    .aligment_of_qr_code {
+    display: flex;
+    justify-content: center;
+}
+
 	#main-slider-one__pagination {
 		display: none;
 	}
