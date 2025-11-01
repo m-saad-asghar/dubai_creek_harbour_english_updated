@@ -8,7 +8,7 @@ export default function Team() {
     return (
         <>
             {/*Start Service One */}
-        <section id="map">
+        <section id="map" className="map_container">
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="">

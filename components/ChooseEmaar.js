@@ -8,7 +8,7 @@ export default function ChooseEmaar() {
     return (
         <>
             {/*Start Service One */}
-        <section className="service-one extra_spacing" id="why-invest-in-dubai">
+        <section className="service-one extra_spacing" id="emaar-at-a-glance">
             {/* <div className="service-one__shape2" style={{backgroundImage: 'url(assets/img/shape/service-v1-shape2.png)'}}>
             </div> */}
             <div className="container">

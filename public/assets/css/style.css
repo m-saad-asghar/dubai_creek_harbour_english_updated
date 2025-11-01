@@ -242,6 +242,16 @@ h6 {
     height: 100% !important;
 }
 
+.thm-btn_submit:disabled {
+  background-color: #0b4a35; /* light green */
+  cursor: not-allowed;
+  opacity: 0.3; /* optional – makes it look disabled */
+}
+
+.map_container {
+    margin-top: 100px;
+}
+
 .line-break {
   display: block; /* default inline */
   white-space: nowrap;
@@ -253,7 +263,7 @@ h6 {
 
 
 .contact-two {
-    /* background-color: #9f8151; */
+    background-color: #9f8151;
 }
 
 .full_height {
@@ -261,7 +271,7 @@ h6 {
 }
 
 .contact-page {
-     /* background-color: #9f8151; */
+     background-color: #9f8151;
      padding-top: 100px;
 }
 
@@ -319,7 +329,7 @@ h6 {
     }
 
 .future_container {
-    margin-bottom: 80px;
+    margin-bottom: 110px;
 }
 
 .down_styling {
@@ -6416,7 +6426,7 @@ Project Four Css
 	}
 
 	.contact-two__inner {
-		padding: 65px 50px 75px;
+		/* padding: 65px 50px 75px; */
 	}
 
 	.faq-one--faq {
@@ -6518,6 +6528,10 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .future_container {
+    margin-bottom: 70px;
+}
+
     .map_styling {
     height: auto;
 }
@@ -6588,11 +6602,15 @@ Project Four Css
     
     .contact-page {
         padding-bottom: 70px;
-        padding-top: 60px;
+        padding-top: 40px;
+    }
+
+    .map_container {
+        margin-top: 55px;
     }
 
     .why-one {
-        padding: 70px 0 70px;
+        padding: 60px 0 40px;
     }
 
     .service-one {
@@ -7178,7 +7196,7 @@ Project Four Css
 	}
 
 	.contact-two__inner {
-		padding: 65px 25px 75px;
+		/* padding: 65px 25px 75px; */
 	}
 
 	.contact-two__inner .title-box h2 {

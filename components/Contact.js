@@ -134,11 +134,10 @@ export default function Contact() {
       ASSIGNED_BY_ID: 25,
       UF_CRM_1754652292782: "Dubai Creek Harbour EN Landing Page",
       UF_CRM_1761206533: countryValue,
-    //   New Fields
-      COUNTRY_OF_RESIDENCE: formData.country_of_residence,
-    BEDROOMS: formData.bedrooms,
-    DURATION: formData.duration,
-    PURPOSE: formData.purpose,
+    UF_CRM_1761918592: formData.country_of_residence,
+    UF_CRM_1761918627: formData.bedrooms,
+    UF_CRM_1761918741: formData.duration,
+    UF_CRM_1761918805: formData.purpose,
     },
     params: {
       REGISTER_SONET_EVENT: "Y",
@@ -162,98 +161,54 @@ export default function Contact() {
   }
 }
 
-router.push('/thank-you');
-// return;
-await sendLeadEmail();
+  try {
+    setDisableBtn(true);
+    const response = await fetch(
+      "https://crm.shiroestate.ae/rest/25/btnspp9oeepo8jt6/crm.lead.add.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      }
+    );
 
-//   try {
-//     setDisableBtn(true);
-//     const response = await fetch(
-//       "https://crm.shiroestate.ae/rest/25/btnspp9oeepo8jt6/crm.lead.add.json",
-//       {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(payload),
-//       }
-//     );
+    const result = await response.json();
+   setDisableBtn(false);
 
-//     const result = await response.json();
-//    setDisableBtn(false);
-
-//     if (result.result) {
-//       router.push('/thank-you');
-//       setFormData({
-//           name: '',
-//         phone: '',
-//         email: '',
-//         country_of_residence: '',
-//         bedrooms: '',
-//         duration: '',
-//         purpose: '',
-//       });
-//       await sendLeadEmail();
-//     } else {
-//       setDisableBtn(false);
-//       toast.error(
-//   "Something Went Wrong. Please Try Again.",
-//   {
-//     duration: 5000,
-//   }
-// );
-//     }
-//   } catch (error) {
-//     setDisableBtn(false);
-//     console.error("Error submitting lead:", error);
-//        toast.error(
-//   "Something Went Wrong. Please Try Again.",
-//   {
-//     duration: 5000,
-//   }
-// );
-//   }
+    if (result.result) {
+      router.push('/thank-you');
+      setFormData({
+          name: '',
+        phone: '',
+        email: '',
+        country_of_residence: '',
+        bedrooms: '',
+        duration: '',
+        purpose: '',
+      });
+      await sendLeadEmail();
+    } else {
+      setDisableBtn(false);
+      toast.error(
+  "Something Went Wrong. Please Try Again.",
+  {
+    duration: 5000,
+  }
+);
+    }
+  } catch (error) {
+    setDisableBtn(false);
+    console.error("Error submitting lead:", error);
+       toast.error(
+  "Something Went Wrong. Please Try Again.",
+  {
+    duration: 5000,
+  }
+);
+  }
 };
-
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-
-    //     // 1. Basic Validation Check
-    //     if (phoneError) {
-    //         setSubmitMessage("Please fix the errors in the form before submitting.");
-    //         return;
-    //     }
-
-    //     // Check if required fields are filled (basic check)
-    //     const requiredFields = ['name', 'email', 'phone', 'country', 'bedrooms', 'duration', 'purpose'];
-    //     const isFormValid = requiredFields.every(field => formData[field] && formData[field].trim() !== '');
-
-    //     if (!isFormValid) {
-    //         setSubmitMessage("Please fill in all required fields marked with an asterisk (*).");
-    //         return;
-    //     }
-
-    //     // 2. Log the Payload (The key requirement)
-    //     console.log("✅ Form Data Submitted (Payload):", formData);
-
-    //     // 3. Set Success Message (instead of using alert)
-    //     setSubmitMessage("Thank you! Your inquiry has been submitted. Check the console for the form payload.");
-        
-    //     // Optional: Clear form after successful submission
-    //     // setFormData({
-    //     //     name: '',
-    //     //     phone: '',
-    //     //     email: '',
-    //     //     country: '',
-    //     //     bedrooms: '',
-    //     //     duration: '',
-    //     //     purpose: '',
-    //     // });
-        
-    //     // Clear message after a few seconds
-    //     setTimeout(() => setSubmitMessage(null), 7000);
-    // };
 
 
     return (

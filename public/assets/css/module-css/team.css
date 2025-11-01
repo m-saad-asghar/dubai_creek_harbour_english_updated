@@ -383,7 +383,7 @@
 .team-two {
     position: relative;
     display: block;
-    padding: 120px 0px 90px;
+    padding: 60px 0px 0px;
     z-index: 1;
 }
 

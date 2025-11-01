@@ -4,7 +4,7 @@
 .service-one {
     position: relative;
     display: block;
-    padding: 120px 0 90px;
+    padding: 100px 0 110px;
     background: var(--thm-black);
     z-index: 1;
 }
@@ -12,7 +12,7 @@
 .why-one {
     position: relative;
     display: block;
-    padding: 120px 0 90px;
+    padding: 90px 0 110px;
     z-index: 1;
 }
 
