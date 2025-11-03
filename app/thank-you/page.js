@@ -97,7 +97,7 @@ export default function ThankYou() {
      {/* ✅ Google Analytics Event Script */}
       <Script id="lead-submission-dch-en" strategy="afterInteractive">
       {`
-        window.gtag('event', 'lead_submission_dch_en', {
+        window.gtag('event', 'lead_dch_en', {
           lead_language: 'english',
           project_name: 'dubai_creek_harbour',
           landing_page: 'dch_en',
