@@ -323,17 +323,9 @@ export default function Contact() {
                                                             required
                                                         >
                                                             <option value="">Select Bedrooms</option>
-                                                            <option value="Studio">Studio</option>
                                                             <option value="1 Bedroom">1 Bedroom</option>
                                                             <option value="2 Bedrooms">2 Bedrooms</option>
                                                             <option value="3 Bedrooms">3 Bedrooms</option>
-                                                            <option value="4 Bedrooms">4 Bedrooms</option>
-                                                            <option value="5 Bedrooms">5 Bedrooms</option>
-                                                            <option value="6 Bedrooms">6 Bedrooms</option>
-                                                            <option value="7 Bedrooms">7 Bedrooms</option>
-                                                            <option value="7+ Bedrooms">7+ Bedrooms</option>
-                                                            <option value="Townhouse">Townhouse</option>
-                                                            <option value="Penthouse">Penthouse</option>
                                                         </select>
                                                     </div>
                                                 </div>

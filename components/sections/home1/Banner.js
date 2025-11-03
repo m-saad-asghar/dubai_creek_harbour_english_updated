@@ -42,7 +42,7 @@ export default function Banner() {
          <div>
              <p className='small_heading' style={{lineHeight: "1.2"}}>DUBAI CREEK HARBOUR</p>
           <h3 style={{lineHeight: "1.2"}} className='main_heading_margin'>
-  Luxury Homes Starting from <span className="line-break">AED 1.79M.*</span>
+  Own a Luxury Home From Just <span className="line-break">AED 1.79M.*</span>
 </h3>
          </div>
 
@@ -50,7 +50,7 @@ export default function Banner() {
 IN DUBAI’S MOST SOUGH-AFTER LOCATIONS.</p>
   <div className='resp_usd'>
         <p className="down_styling" style={{lineHeight: "1.5"}}>
-  *USD 488,000 / EUR 420,000 / <span className="line-break-other">GBP 399,000</span>
+  *USD 488K / EUR 423K / <span className="line-break-other">GBP 371K</span>
 </p>
 
       </div>
