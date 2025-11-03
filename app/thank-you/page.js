@@ -102,7 +102,7 @@ export default function ThankYou() {
           project_name: 'dubai_creek_harbour',
           landing_page: 'dch_en',
           currency: 'AED',
-          value: 150
+          value: 1
         });
       `}
     </Script>
