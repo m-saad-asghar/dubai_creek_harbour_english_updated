@@ -188,6 +188,11 @@ h6 {
     text-transform: inherit;
 }
 
+.spacing_ending {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
 h1 a,
 h2 a,
 h3 a,
@@ -212,7 +217,7 @@ h2 {
 }
 
 .emaar_logo {
-    height: 60px !important;
+    height: 70px !important;
     width: auto !important;
 }
 
