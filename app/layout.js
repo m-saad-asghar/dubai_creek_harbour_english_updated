@@ -16,7 +16,20 @@ export default function RootLayout({ children }) {
          <html lang="en" className={`${dM_Sans.variable}`}>
             <head>
 
-              
+              {/* Google Analytics */}
+          <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-ZWL7SWGJFK"
+      />
+
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZWL7SWGJFK');
+        `}
+      </Script>
 
      
       </head>
