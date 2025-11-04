@@ -5886,6 +5886,7 @@ Project Four Css
 
 	.service-one__single {
 		padding: 52px 50px 50px;
+        min-height: 222px !important;
 	}
 
 	.feauture-two__single {
@@ -6197,6 +6198,7 @@ Project Four Css
 		max-width: 500px;
 		width: 100%;
 		margin: 0 auto 30px;
+        min-height: 222px !important;
 	}
 
 	.faq-one__inner .big-title {
@@ -6667,6 +6669,7 @@ Project Four Css
 		width: 100%;
 		margin: 0 auto 30px;
 		padding: 52px 35px 50px;
+        min-height: 222px !important;
 	}
 
 	.service-one__single-inner {
