@@ -28,7 +28,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
     className="emaar_logo"
   />
 </Link>
- <Link href="/" passHref>
+ <Link href="https://www.shiroestate.ae/" target="_blank" passHref>
   <Image
     src="/assets/img/shiro_images/logo.png"
     alt="shiro_logo"
