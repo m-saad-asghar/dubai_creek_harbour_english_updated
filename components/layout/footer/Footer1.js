@@ -40,7 +40,7 @@ export default function Footer1() {
 
                                      <div className="footer-widget__about-inner footer_spacing privacy_policy_footer centerize" style={{marginTop: 0}}>
                                         <div className="number-box centerize">
-                                            <span style={{color: "#ffffff"}}>@ SHIRO ESTATE {currentYear}. All Rights Reserved.</span>
+                                            <span style={{color: "#ffffff"}}>&copy; SHIRO ESTATE {currentYear}. All Rights Reserved.</span>
                                         </div>
                                     </div>
                                 </div>
