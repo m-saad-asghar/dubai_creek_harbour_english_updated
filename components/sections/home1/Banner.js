@@ -53,6 +53,14 @@ IN DUBAI’S MOST SOUGH-AFTER LOCATIONS.</p>
   *USD 488K / EUR 423K / <span className="line-break-other">GBP 371K</span>
 </p>
 
+ <p className="down_styling" style={{lineHeight: "1.5"}}>
+  *Subject to Availability
+</p>
+ <p className="down_styling" style={{lineHeight: "1.5"}}>
+  *The Global Prices may vary as per the Exchange Rate
+</p>
+
+
       </div>
         </div>
                         {/* <h3>Creative</h3> */}
