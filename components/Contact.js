@@ -1,9 +1,10 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import PhoneInput, { isPossiblePhoneNumber } from "react-phone-input-2";
 import 'react-phone-input-2/lib/style.css';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
+import ReCAPTCHA from "react-google-recaptcha";
 
 // Note: Layout and Link imports are commented out as they were not provided, 
 // but you should uncomment them if you use them in your actual Next.js project structure.
@@ -12,6 +13,10 @@ import { useSearchParams } from 'next/navigation';
 
 export default function Contact() {
     const router = useRouter();
+    // 🔐 reCAPTCHA for THIS component only
+    const recaptchaRef = useRef(null);
+    const [captchaToken, setCaptchaToken] = useState(null);
+    const [captchaError, setCaptchaError] = useState('');
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -82,8 +87,22 @@ export default function Contact() {
         }
     };
 
+    // ✅ reCAPTCHA handler for THIS form
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+        if (token) {
+            setCaptchaError('');
+        }
+    };
+
      const handleSubmit = async (e) => {
   e.preventDefault();
+
+  // ✅ Check captcha FIRST
+        if (!captchaToken) {
+            setCaptchaError("Please verify that you are not a robot.");
+            return;
+        }
 
    if (!formData.phone) {
     setPhoneError("Phone number is required");
@@ -179,16 +198,23 @@ export default function Contact() {
 
     if (result.result) {
       router.push('/thank-you');
+       // Reset form
+                // Reset this form's captcha only
+                setCaptchaToken(null);
+                if (recaptchaRef.current) {
+                    recaptchaRef.current.reset();
+                }
+
+                await sendLeadEmail();
       setFormData({
           name: '',
         phone: '',
         email: '',
-        // country_of_residence: '',
         bedrooms: '',
         duration: '',
         purpose: '',
       });
-      await sendLeadEmail();
+      
     } else {
       setDisableBtn(false);
       toast.error(
@@ -362,8 +388,19 @@ export default function Contact() {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                                   
+                                                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 captcha_container">
+                                                    <div>
+                                                        <ReCAPTCHA
+                                                            ref={recaptchaRef}
+                                                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                                            onChange={handleCaptchaChange}
+                                                        />
+                                                        {captchaError && (
+                                                            <p style={{ color: 'red', fontSize: '14px', marginTop: '5px' }}>
+                                                                {captchaError}
+                                                            </p>
+                                                        )}
+                                                    </div>
                                                 </div>
 
                                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 btn_styling">

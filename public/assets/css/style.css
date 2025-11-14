@@ -230,6 +230,10 @@ h2 {
     width: auto !important;
 }
 
+.captcha_container {
+    margin-top: 20px;
+}
+
 .shiro_logo {
         height: 40px;
         width: auto;
@@ -6559,6 +6563,10 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+     .captcha_container {
+    margin-top: 30px;
+}
 
     .image_container {
     height: 100% !important;
