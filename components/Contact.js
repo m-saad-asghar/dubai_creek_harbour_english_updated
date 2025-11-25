@@ -33,6 +33,7 @@ export default function Contact() {
      const [disableBtn, setDisableBtn] = useState(false);
      const searchParams = useSearchParams();
      const [countryValue, setCountryValue] = useState('');
+     const [countryCode, setCountryCode] = useState('ae');
   const [originValue, setOriginValue] = useState('');
 
   useEffect(() => {
@@ -49,6 +50,7 @@ export default function Contact() {
       }
     } else {
       setOriginValue('');
+       setCountryCode('ae');
     }
 
     if (country) {
@@ -57,6 +59,7 @@ export default function Contact() {
     .toLowerCase()
     .replace(/\b\w/g, (char) => char.toUpperCase());
   setCountryValue(formattedCountry);
+  setCountryCode(formattedCountry);
 } else {
       setCountryValue('');
     }
@@ -302,7 +305,23 @@ export default function Contact() {
                                                         {/* 🎯 FIX 2: Use the dedicated phone handler */}
                                                         <PhoneInput
                                                             name="phone"
-                                                            country={"ae"}
+                                                            country={
+  countryCode == "British" 
+    ? "gb" 
+    : countryCode == "Saudi Arabia" 
+      ? "sa" 
+     : countryCode == "America" 
+      ? "us" 
+    : countryCode == "Germany" 
+      ? "de"
+    : countryCode == "Netherlands"
+      ? "nl"
+    : countryCode == "Sweden"
+      ? "se"
+      : countryCode === "Ireland"
+        ? "ie" 
+        : "ae"
+}
                                                             value={formData.phone}
   onChange={(value) =>
     setFormData({
